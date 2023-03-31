@@ -1,19 +1,12 @@
 import React, { useState } from 'react'
-import { isSameDay } from 'date-fns'
-import { enGB } from 'date-fns/locale'
-import { Calendar } from 'react-nice-dates'
-import 'react-nice-dates/build/style.css'
-import './styles.css'
-// Very rough implementation of multiple date selection
-export default function CalendarExample() {
-    const [selectedDates, setSelectedDates] = useState([])
-    const modifiers = {
-        selected: date => selectedDates.some(selectedDate => isSameDay(selectedDate, date))
-    }
-    const handleDayClick = date => {
-        setSelectedDates([...selectedDates, date])
-    }
+import DateTimePicker from 'react-datetime-picker';
+
+export default function Calendar() {
+    const [value, onChange] = useState(new Date());
+
     return (
-        <Calendar onDayClick={handleDayClick} modifiers={modifiers} locale={enGB} />
-    )
+        <div className="flex justify-center mt-12 ">
+            <DateTimePicker onChange={onChange} value={value} />
+        </div>
+    );
 }
