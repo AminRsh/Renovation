@@ -37,7 +37,7 @@ const SwiperCentered = () => {
                     prevEl: ".swiper-button-prev",
                 }}
                 spaceBetween={4}
-                slidesPerView={2.75}
+                slidesPerView={2.5}
                 
                 // watchSlidesProgress={true}
                 // watchSlidesVisibility={true}
