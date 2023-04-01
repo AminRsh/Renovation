@@ -46,7 +46,7 @@ const Decks = () => {
                 </div>
             </div>
 
-            <div className="w-screen h-[600px] mx-auto px-0 bg-slate-400  ">
+            <div className="w-screen h-[600px] mx-auto px-0">
                 <div className="grid grid-cols-3 gap-0">
                     <div className="object-center max-h-[300px] overflow-hidden transition ease-in-out hover:duration-[2000ms] transform hover:scale-110 hover:z-10">
                         <img src={d9} alt="d9" />

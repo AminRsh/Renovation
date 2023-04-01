@@ -113,44 +113,17 @@ const Navbar = () => {
 
                     <nav className="mt-1">
                         <ul className={"flex flex-col items-start align-bottom text-2xl text-white justify-center p-8 gap-8"}>
-
                             <li>
                                 <NavLink onClick={showMenu} to="/" className="px-8 hover:text-slate-600">Home</NavLink>
                             </li>
                             <li>
                                 <NavLink onClick={showMenu} to="/about" className="px-8 hover:text-slate-600">About us</NavLink>
                             </li>
-                            <li  className={dropdown ? "relative flex flex-row items-start h-48" : "relative flex flex-row items-start"}>
-                                <button   to="/" className="px-8 hover:text-slate-600 flex items-center" onClick={displayDropdown}>Services<BiChevronDown /></button>
-
-                                <ul btnRef className={dropdown ? "absolute top-10 left-12 text-sm" : "hidden"}>
-                                    <li className="hover:text-yellow-500 text-slate-200">
-                                        <NavLink onClick={showMenu} to="/decks" className="">Decks & Fences</NavLink>
-                                    </li>
-
-                                    <li className="hover:text-yellow-500 text-slate-200">
-                                        <NavLink onClick={showMenu} to="/landscaping" className="">Landscaping</NavLink>
-                                    </li>
-                                    <li className="hover:text-yellow-500 text-slate-200">
-                                        <NavLink onClick={showMenu} to="/coming-soon" className="">Interlocking</NavLink>
-                                    </li>
-                                    <li className="hover:text-yellow-500 text-slate-200">
-                                        <NavLink onClick={showMenu} to="/coming-soon" className="">Commercial</NavLink>
-                                    </li>
-                                    <li className="hover:text-yellow-500 text-slate-200">
-                                        <NavLink onClick={showMenu} to="/coming-soon" className="">Kitchen Remodel</NavLink>
-                                    </li>
-                                    <li className="hover:text-yellow-500 text-slate-200">
-                                        <NavLink onClick={showMenu} to="/coming-soon" className="">Bathroom Remodel</NavLink>
-                                    </li>
-                                    <li className="hover:text-yellow-500 text-slate-200">
-                                        <NavLink onClick={showMenu} to="/coming-soon" className="">Basement</NavLink>
-                                    </li>
-                                    <li className="hover:text-yellow-500 text-slate-200">
-                                        <NavLink onClick={showMenu} to="/coming-soon" className="">Renovations</NavLink>
-                                    </li >
-                                </ul>
-
+                            <li>
+                                <NavLink onClick={showMenu} to="/decks" className="px-8 hover:text-slate-600">Decks & Fences</NavLink>
+                            </li>
+                            <li>
+                                <NavLink onClick={showMenu} to="/landscaping" className="px-8 hover:text-slate-600">Landscaping</NavLink>
                             </li>
                             <li>
                                 <NavLink onClick={showMenu} to="/testimonials" className="px-8 hover:text-slate-600">Testimonials</NavLink>
