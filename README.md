@@ -1,3 +1,5 @@
+A renovation company with a front-end built using React, React Router, and CSS. The application enables users to make in-person appointments with company staff and access information about the company's services. Additionally, customers can provide feedback on the website.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
